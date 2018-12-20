@@ -71,16 +71,37 @@ public class EmailIdDao {
 				stmt = conn.createStatement();
 				String sql = "select * from emailid where email = '"+ email+"'";
 				rs = stmt.executeQuery(sql);
-				while(rs.next()) {
+				if(rs.next()) {
 					EmailId emailid = new EmailId();
 					emailid.setPassword(rs.getString("password"));
 					return emailid;
 				}
-				return null;
 			} catch (Exception e) {
 				e.printStackTrace();
+			}finally{
+				JDBCUtils.release(rs,stmt, conn);
 			} 
 			return null;
-			
+		}
+		public boolean find1(String email) {
+			Connection conn = null;
+			Statement stmt = null;
+			ResultSet rs = null;
+			try {
+				conn = JDBCUtils.getConnection();
+				stmt = conn.createStatement();
+				String sql = "select * from emailid where email = '"+ email+"'";
+				rs = stmt.executeQuery(sql);
+				if(rs.next()) {
+					EmailId emailid = new EmailId();
+					emailid.setPassword(rs.getString("password"));
+					return true;
+				}
+			} catch (Exception e) {
+				return false;
+			} finally{
+				JDBCUtils.release(rs,stmt, conn);
+			}
+			return false;
 		}
 }

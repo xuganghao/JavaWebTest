@@ -10,10 +10,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Dao.EduexDao;
 import Dao.EmailIdDao;
+import Dao.EmoexDao;
 import Dao.SelfInfoDao;
+import Dao.WorkexDao;
+import domain.Eduex;
 import domain.EmailId;
+import domain.Emoex;
 import domain.SelfInfo;
+import domain.Workex;
 
 /**
  * Servlet implementation class RegisterEmailServlet
@@ -46,8 +52,8 @@ public class RegisterEmailServlet extends HttpServlet {
 		ArrayList<EmailId> list = dao.findAll();
 		for(int i = 0;i < list.size();i++) {
 			if(email.equals(list.get(i).getEmail())) {
-				request.setAttribute("msg", "用户名已存在");
-				RequestDispatcher rd = request.getRequestDispatcher("/registerEmail.jsp");
+				request.setAttribute("msg2", "用户名已存在");
+				RequestDispatcher rd = request.getRequestDispatcher("/register.jsp");
 				rd.forward(request, response);
 				return;
 			}
@@ -57,12 +63,24 @@ public class RegisterEmailServlet extends HttpServlet {
 		id.setName(name);
 		id.setPassword(password);
 		boolean b = dao.insert(id);
-	//	System.out.println(b);
-		// 向selfinfo 表中添加用户
 		info.setAccount(email);
 		boolean b1 = dao1.insert(info);
-	//	System.out.println(b1);
-		response.sendRedirect("/Training/reSuccess.jsp");
+		// 向eduex表中插入数据
+		Eduex eduex = new Eduex();
+		EduexDao eduexdao = new EduexDao();
+		eduex.setAccount(email);
+		boolean b2 = eduexdao.insert(eduex);
+		// 向emoex表中插入数据
+		Emoex emoex = new Emoex();
+		EmoexDao emoexdao = new EmoexDao();
+		emoex.setAccount(email);
+		boolean b3 = emoexdao.insert(emoex);
+		// 向workex表中添加数据
+		Workex workex = new Workex();
+		WorkexDao workexdao = new WorkexDao();
+		workex.setAccount(email);
+		boolean b4 = workexdao.insert(workex);
+		response.sendRedirect("/Training/regok.html");
 
 	}
 

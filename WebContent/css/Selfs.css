@@ -1,0 +1,209 @@
+@charset "UTF-8";
+.bg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 120%;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url(../pic/self_p.jpg) ;
+}
+#menu{
+    position: fixed;
+    top:80px;
+    left: 20%;
+    width: 60%;
+    height:45px;
+    z-index: 5;
+    background:#ffffff repeat-x 0px 0px}
+
+#ulmeanu{
+    margin:0px auto;
+    padding: 0px;
+    height:4%;
+    width: 960px;
+
+    list-style-type: none;
+}
+#ulmeanu li{
+    float: left;
+    left: -50px;
+    padding-left: 80px;
+    text-align: center;
+}
+#ulmeanu li a{
+    display: block;
+    width: 184px;
+    height:47px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height:47px;
+    color: #000;
+    text-decoration: none;
+}
+#ulmeanu li a:hover{
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+
+
+}
+#container{
+    position:relative;
+    left: 20%;
+    top: 120px;
+    width: 60%;
+    height: 75%;
+
+
+
+
+}
+
+.title{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 11%;
+    background-color: rgba(255, 192, 203, 1);
+    z-index: 2;
+
+}
+.t1{
+    position: absolute;
+    top: -70px;
+    left:60px;
+    font-size: 65px;
+    font-family: 方正舒体;
+}
+.t2{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    font-size: 20px;
+    font-family: 方正舒体;
+}
+
+ul li{
+    width: 30px;
+    height: 40px;
+    position: relative;
+    margin-left: 80px;
+    display:inline;
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 8%;
+
+}
+
+
+ul li ul li {
+    float: none;
+    border-left: none;
+    margin-top: 2px;
+
+}
+
+ul li ul {
+    display: none;
+    width: 70px;
+    position: absolute;
+
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+.bian{
+    position:absolute;
+    text-decoration: none;
+    color: #000;
+    left: 600px;
+    font-size: 20px;
+    font-family: 黑体;
+}
+.index{
+
+    position: absolute;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    top: 20px;
+    left: 90%;
+    color: white;
+
+}
+#tb{
+    margin-top: 40px;
+}
+#tb tr th{
+    width: 80px;
+    height: 30px;
+    background-color: #ff837e;
+}
+#body{
+    height: 400px;
+    left: 100px;
+    right: 100px;
+    top: 10px;
+    background: #ff4400;
+}
+.page{
+    margin-top: 30px;
+}
+.page a{
+    text-decoration: none;
+    border:1px solid #f9d52b;
+    padding: 5px 7px;
+    color: #767675;
+    cursor: pointer;
+}
+.page span{
+    text-decoration: none;
+    border:1px solid #f9d52b;
+    padding: 5px 7px;
+    color: #767675;
+    cursor: pointer;
+}
+.page a:hover,.page span:hover{
+    color: red;
+}
+#tb1{
+    margin-top: 40px;
+}
+#tb1 tr th{
+    width: 80px;
+    height: 30px;
+    background-color: #ff837e;
+}
+#body1{
+    height: 400px;
+    left: 100px;
+    right: 100px;
+    top: 10px;
+}
+.page{
+    margin-top: 30px;
+}
+.page a{
+    text-decoration: none;
+    border:1px solid #f9d52b;
+    padding: 5px 7px;
+    color: #767675;
+    cursor: pointer;
+}
+.page span{
+    text-decoration: none;
+    border:1px solid #f9d52b;
+    padding: 5px 7px;
+    color: #767675;
+    cursor: pointer;
+}
+.page a:hover,.page span:hover{
+    color: red;
+}
+
+

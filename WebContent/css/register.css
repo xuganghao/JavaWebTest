@@ -1,0 +1,309 @@
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url(../pic/xiyang.jpg) ;
+}
+nav li{
+    position: absolute;
+    display: inline;
+    text-decoration: none;
+    margin-top: 124px;
+    margin-left: 482px;
+    width:225px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #000;
+    background-color: rgba(255, 192, 203, 0.2);
+    cursor: pointer;
+
+}
+.act{
+    background-color: rgba(133, 238, 55, 0.2);
+    position: absolute;
+    margin-top: 124px;
+    margin-left: 706px;
+    width: 225px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+li:hover{
+    background: pink;
+    color: white;
+}
+section{
+    position: absolute;
+    top: 200px;
+    width: 450px;
+    height: 300px;
+    margin-left: 522px ;
+    background:lavenderblush;
+    float: right;
+}
+
+
+.input{
+    position: relative;
+    box-sizing: border-box;
+    width: 230px;
+    height: 28px;
+    border: palevioletred 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 90px;
+}
+.p{
+
+    position: absolute;
+    font-size: 13px;
+    color: palevioletred;
+}
+.name-input{
+    top: 10px;
+
+}
+.p1{
+    margin-left: 10px;
+    top: 0px;
+}
+
+
+.password-input{
+
+    top: 30px;
+
+}
+
+.p2{
+    margin-left: 10px;
+    top: 48px;
+}
+.password-input-again{
+    top: 50px;
+}
+.tpassword-input-again{
+    top: 21px;
+}
+.p3{
+    margin-left: 10px;
+    top: 99px;
+}
+.email-input{
+    top: 70px;
+}
+.p4{
+    margin-left: 10px;
+    top: 149px;
+}
+.tel-input{
+    top: 90px;
+}
+.p5{
+    margin-left: 10px;
+    top: 190px;
+}
+.btn {
+    position: absolute;
+    top: 250px;
+    left: 85px;
+    width: 300px;
+    height: 38px;
+    background: palevioletred;
+    border: palevioletred 1px solid;
+}
+.input1{
+    position: relative;
+    box-sizing: border-box;
+    width: 230px;
+    height: 30px;
+    border: palevioletred 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 140px;
+}
+.p6{
+    margin-left: 60px;
+    top: 2px;
+    font-size: 20px;
+}
+.p7{
+    margin-left: 60px;
+    top: 42px;
+    font-size: 20px;
+}
+.p8{
+    margin-left: 70px;
+    top: 82px;
+    font-size: 20px;
+}
+.p9{
+    margin-left: 35px;
+    top: 122px;
+    font-size: 20px;
+}
+.dname-input{
+
+    top: 20px;
+}
+
+.dnum-input{
+    top: 30px;
+}
+.dpassword-input{
+    top: 10px;
+}
+
+.land{
+    position: absolute;
+    width: 200px;
+    height: 35px;
+    top: 260px;
+    left: 130px;
+    background: pink;
+    border: pink 1px solid;
+}
+.t1{
+    position: absolute;
+    top: -70px;
+    left: 100px;
+    font-size: 80px;
+    font-family: 方正舒体;
+}
+.t2{
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    font-size: 30px;
+    font-family: 方正舒体;
+}
+.num{
+    position: relative;
+    box-sizing: border-box;
+    width: 140px;
+    height: 30px;
+    border: palevioletred 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 140px;
+    top: 120px;
+
+}
+.yan{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 180px;
+    left: 290px;
+    background: pink;
+    border: palevioletred 1px solid;
+}
+.xie{
+     position: absolute;
+     top: 220px;
+     width: 20px;
+     height: 20px;
+     left: 80px;
+ }
+.xieyi{
+    position: absolute;
+    top: 210px;
+    left: 110px;
+}
+.xie1{
+    position: absolute;
+    top: 200px;
+    width: 20px;
+    height: 20px;
+    left: 80px;
+}
+.xieyi1{
+    position: absolute;
+    top: 190px;
+    left: 110px;
+}
+#errorpwd{
+    position: absolute;
+    top: 95px;
+    left: 340px;
+}
+#usernameMsg{
+     position: absolute;
+     top: 20px;
+     left:380px;
+     width: 150px;
+     height: 30px;
+
+
+ }
+#passwordMsg {
+    position: absolute;
+    top: 96px;
+    left: 380px;
+    width: 150px;
+    height: 30px;
+
+}
+#confirmMsg{
+    position: absolute;
+    top: 146px;
+    left: 380px;
+    width: 150px;
+    height: 30px;
+
+}
+#error{
+    position: absolute;
+    top: 106px;
+    left: 322px;
+    width: 150px;
+    height: 30px;
+
+}
+#confirmName{
+    position: absolute;
+    top: 23px;
+    left: 380px;
+    width: 150px;
+    height: 30px;
+
+}
+#confirmName1{
+    position: absolute;
+    top: 10px;
+    left: 330px;
+    width: 150px;
+    height: 30px;
+
+
+}
+#confirmPwd{
+    position: absolute;
+    top: 103px;
+    left: 380px;
+    width: 150px;
+    height: 30px;
+
+}
+#confirmPwd1{
+    position: absolute;
+    top: 60px;
+    left: 330px;
+    width: 150px;
+    height: 30px;
+
+}
+#confirmtel{
+    position: absolute;
+    top: 60px;
+    left: 380px;
+    width: 150px;
+    height: 30px;
+
+}
+

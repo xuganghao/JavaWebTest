@@ -1,7 +1,6 @@
 package Servlet;
 
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
@@ -11,10 +10,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Dao.EduexDao;
+import Dao.EmoexDao;
 import Dao.PhoneIdDao;
 import Dao.SelfInfoDao;
+import Dao.WorkexDao;
+import domain.Eduex;
+import domain.Emoex;
 import domain.PhoneId;
 import domain.SelfInfo;
+import domain.Workex;
 
 /**
  * Servlet implementation class RegisterServlet
@@ -48,7 +53,7 @@ public class RegisterServlet extends HttpServlet {
 		for(int i = 0;i < list.size();i++) {
 			if(phone.equals(list.get(i).getPhone())) {
 //				System.out.println("用户已存在");
-				request.setAttribute("msg", "用户名已存在");
+				request.setAttribute("msg1", "用户名已存在");
 				RequestDispatcher rd = request.getRequestDispatcher("/register.jsp");
 				rd.forward(request, response);
 				return;
@@ -59,13 +64,26 @@ public class RegisterServlet extends HttpServlet {
 		phoneid.setPhone(phone);
 		phoneid.setPassword(password);
 		boolean b = dao.insert(phoneid);
-	//	System.out.println(b);
-		// 向selfinfo表中添加一个用户
 		info.setAccount(phone);
 		boolean b1 = dao1.insert(info);
-	//	System.out.println(b1);
+		// 向eduex表中插入数据
+		Eduex eduex = new Eduex();
+		EduexDao eduexdao = new EduexDao();
+		eduex.setAccount(phone);
+		boolean b2 = eduexdao.insert(eduex);
+		// 向emoex表中插入数据
+		Emoex emoex = new Emoex();
+		EmoexDao emoexdao = new EmoexDao();
+		emoex.setAccount(phone);
+		boolean b3 = emoexdao.insert(emoex);
+		// 向workex表中添加数据
+		Workex workex = new Workex();
+		WorkexDao workexdao = new WorkexDao();
+		workex.setAccount(phone);
+		boolean b4 = workexdao.insert(workex);
+		System.out.println(b4);
 		
-		response.sendRedirect("/Training/reSuccess.jsp");
+		response.sendRedirect("/Training/regok.html");
 	}
 
 	/**

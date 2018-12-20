@@ -4,6 +4,14 @@ public class PhoneId {
 	private String phone;
 	private String password;
 	private String name;
+	private String join;
+	
+	public String getJoin() {
+		return join;
+	}
+	public void setJoin(String join) {
+		this.join = join;
+	}
 	public String getPhone() {
 		return phone;
 	}

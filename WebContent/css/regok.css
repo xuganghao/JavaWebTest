@@ -1,0 +1,28 @@
+.bgg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image:url(../pic/bag.jpg) ;
+}
+p{
+    position: absolute;
+    top: 350px;
+    width: 800px;
+    left:200px;
+    color: black ;
+    font-size: 25px ;
+    text-align: center
+}
+
+.L{
+    position: absolute;
+    text-decoration: none;
+    color: salmon;
+}
+.title{
+ position: absolute;
+    top: 250px;
+    left: 550px;
+}

@@ -79,8 +79,33 @@ public class PhoneIdDao {
 			return null;
 		} catch (Exception e) {
 			e.printStackTrace();
-		} 
+		} finally{
+			JDBCUtils.release(rs,stmt, conn);
+		}
 		return null;
 		
 	}
+	// 根据phone查找PhoneId
+		public boolean find1(String phone) {
+			Connection conn = null;
+			Statement stmt = null;
+			ResultSet rs = null;
+			try {
+				conn = JDBCUtils.getConnection();
+				stmt = conn.createStatement();
+				String sql = "select * from phoneid where phone ='"+phone+"'";
+				rs = stmt.executeQuery(sql);
+				while(rs.next()) {
+					PhoneId phoneid = new PhoneId();
+					phoneid.setPassword(rs.getString("password"));
+					return true;
+				}
+			} catch (Exception e) {
+				return false;
+			} finally{
+				JDBCUtils.release(rs,stmt, conn);
+			}
+			return false;
+			
+		}
 }

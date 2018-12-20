@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册成功</title>
+    <link  rel="stylesheet" href="css/regok.css">
+    <link rel="icon" href="pic/tu.png"/>
+        </head>
+<body>
+<div class="bgg">
+<h2 class="title" >注册成功，请登录</h2>
+<p >
+    <b id="second" style="color: #ff4400">5</b>秒后回到登陆注册界面&nbsp;<a  class="L" href="javascript:goback(); ">返回登录界面</a>
+</p>
+
+</div>
+<script type="text/javascript">
+   var sec = document.getElementById("second");
+   var i =5;
+   var timer = setInterval(function(){
+       i--;
+       sec.innerHTML=i;
+       if(i==1){
+           window.location.href =  "Homepage.html";
+       }
+       //window.location.href =  "http://www.imooc.com/";
+       //window.open("http://www.imooc.com/");
+   },1000);
+   function goback(){
+      // window.histroy.go(-1);
+       window.open("login.jsp");
+   }
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

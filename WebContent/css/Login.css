@@ -1,0 +1,163 @@
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url(../pic/xiyang.jpg) ;
+}
+.dname-input{
+
+    top: 60px;
+}
+
+.dpassword-input{
+    top: 100px;
+}
+
+
+.t1{
+    position: absolute;
+    top: -70px;
+    left: 100px;
+    font-size: 80px;
+    font-family: 方正舒体;
+}
+.t2{
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    font-size: 30px;
+    font-family: 方正舒体;
+}
+
+.title{
+    position: absolute;
+    text-align: center;
+    top: 58px;
+    font-size: 30px;
+    left: 468px;
+    width:700px;
+    height: 70px;
+    line-height: 70px;
+    background-color: rgba(255, 192, 203, 0.2);
+    color: rgba(84, 114, 148, 0.6);
+}
+.from{
+    position: relative;
+    width:700px;
+    height: 400px;
+    background-color: rgba(255, 192, 203, 0.2);
+    left: 460px;
+    top: 150px;
+}
+.input{
+    position: relative;
+    box-sizing: border-box;
+    width: 300px;
+    height: 45px;
+    border: palevioletred 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 220px;
+}
+.p{
+
+    position: absolute;
+    font-size: 20px;
+    color: palevioletred;
+}
+.name-input{
+    top: 40px;
+
+}
+.p1{
+    margin-left: 148px;
+    top: 25px;
+}
+
+
+.password-input{
+
+    top: 70px;
+
+}
+.p2{
+    margin-left: 168px;
+    top: 105px;
+}
+.password-input-again{
+    top: 50px;
+}
+.p3{
+    margin-left: 130px;
+    top: 110px;
+}
+.email-input{
+    top: 70px;
+}
+.p4{
+    margin-left: 170px;
+    top: 170px;
+}
+.tel-input{
+    top: 90px;
+}
+.p5{
+    margin-left: 170px;
+    top: 230px;
+}
+
+.land{
+    position: absolute;
+    width: 280px;
+    height: 40px;
+    top: 320px;
+    left: 220px;
+    background: pink;
+    border: palevioletred 1px solid;
+}
+.rember{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 180px;
+    left: 220px;
+    color: pink;
+
+
+}
+.qk{
+    position: absolute;
+    top: 205px;
+    left: 200px;
+}
+.reb{
+    position: absolute;
+    top: 165px;
+    left: 270px;
+}
+.quick{
+  position: absolute;
+    background-image:url(../pic/kuai.png) ;
+    top: 225px;
+    left: 270px;
+}
+.intentp{
+    position: absolute;
+    font-size: 12px;
+    top: 275px;
+    left: 350px;
+   color: cornflowerblue;
+}
+.intent{
+    position: absolute;
+    font-size: 15px;
+    top: 285px;
+    left: 440px;
+    text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+    .bottom_background {
+        width: 200px;
+        height: 300px;
+    }
+}
